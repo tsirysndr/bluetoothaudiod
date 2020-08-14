@@ -1,0 +1,63 @@
+syntax = "proto3";
+
+package karaks.service.bluetooth;
+option go_package = "server";
+
+service Bluetooth {
+  rpc ListDevices(Empty) returns (Devices);
+  rpc ListAdapters(Empty) returns (Adapters);
+  rpc Connect(Params) returns (Adapters);
+  rpc Disconnect(Params) returns (Adapters);
+  rpc Pair(Params) returns (Adapters);
+  rpc EnableCard(Card) returns (Status);
+  rpc StartDiscovery(Adapter) returns (Status);
+  rpc StopDiscovery(Adapter) returns (Status);
+}
+
+message Params {
+  string name = 1;
+}
+
+message Card {
+  string address = 1;
+  int32 num = 2;
+}
+
+message Status {
+  bool ok = 1;
+}
+
+message Device {
+  string path = 1;
+  string name = 2;
+  string alias = 3;
+  string address = 4;
+  string adapter = 5;
+  bool paired = 6;
+  bool connected = 7;
+  bool trusted = 8;
+  bool blocked = 9;
+}
+
+message Devices {
+  repeated Device devices = 1;
+}
+
+message Adapter {
+  string path = 1;
+  string name = 2;
+  string alias = 3;
+  string address = 4;
+  bool discoverable = 5;
+  bool pairable = 6;
+  bool powered = 7;
+  bool discovering = 8;
+}
+
+message Adapters {
+  repeated Adapter adapters = 1;
+}
+
+message Empty {
+
+}

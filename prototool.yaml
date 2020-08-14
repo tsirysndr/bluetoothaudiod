@@ -1,0 +1,13 @@
+protoc:
+  version: 3.11.0
+  includes:
+    - ./server/proto
+lint:
+  group: uber2
+
+generate:
+  plugins:
+    - name: gofast
+      output: ./server
+    - name: twirp
+      output: ./server

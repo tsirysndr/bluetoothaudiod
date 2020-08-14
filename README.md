@@ -1,6 +1,18 @@
 <h1 align="left">Bluetoothaudiod</h1>
-<p>
+<p align="left">
+  <a href="https://github.com/tsirysndr/bluetoothaudiod/commits/master">
+    <img src="https://img.shields.io/github/last-commit/tsirysndr/bluetoothaudiod" target="_blank" />
+  </a>
+  <img alt="GitHub code size in bytes" src="https://img.shields.io/github/languages/code-size/tsirysndr/bluetoothaudiod">
+  <img alt="GitHub go.mod Go version" src="https://img.shields.io/github/go-mod/go-version/tsirysndr/bluetoothaudiod">
+  <a href="https://github.com/tsirysndr/go-deezer/graphs/contributors">
+    <img alt="GitHub contributors" src="https://img.shields.io/github/contributors/tsirysndr/bluetoothaudiod">
+  </a>
+  <a href="https://github.com/tsirysndr/bluetoothaudiod/blob/master/LICENSE">
+    <img alt="License: BSD" src="https://img.shields.io/badge/license-BSD-green.svg" target="_blank" />
+  </a>
 </p>
+
 
 > Control your linux soundcard remotely using a simple Twirp RPC service 
 

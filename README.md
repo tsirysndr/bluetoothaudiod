@@ -5,7 +5,7 @@
   </a>
   <img alt="GitHub code size in bytes" src="https://img.shields.io/github/languages/code-size/tsirysndr/bluetoothaudiod">
   <img alt="GitHub go.mod Go version" src="https://img.shields.io/github/go-mod/go-version/tsirysndr/bluetoothaudiod">
-  <a href="https://github.com/tsirysndr/go-deezer/graphs/contributors">
+  <a href="https://github.com/tsirysndr/bluetoothaudiod/graphs/contributors">
     <img alt="GitHub contributors" src="https://img.shields.io/github/contributors/tsirysndr/bluetoothaudiod">
   </a>
   <a href="https://github.com/tsirysndr/bluetoothaudiod/blob/master/LICENSE">
